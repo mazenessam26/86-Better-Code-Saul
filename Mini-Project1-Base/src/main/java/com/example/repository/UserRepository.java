@@ -17,7 +17,7 @@ public class UserRepository extends MainRepository<User> {
 
     @Override
     protected String getDataPath() {
-        return "path/to/users.json";
+        return "users.json";
     }
 
     @Override

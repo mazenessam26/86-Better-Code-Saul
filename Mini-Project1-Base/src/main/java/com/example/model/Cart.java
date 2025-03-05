@@ -16,10 +16,10 @@ public class Cart {
     public Cart() {
 
     }
-    public Cart(UUID id,UUID userId,ArrayList<Product> products) {
+    public Cart(UUID id,UUID userId,List<Product> products) {
         this.id = id;
         this.userId = userId;
-        this.products = products;
+        this.products = new ArrayList<>(products);
     }
 
     public UUID getId() {
@@ -42,7 +42,7 @@ public class Cart {
         return products;
     }
 
-    public void setProduct(ArrayList<Product> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
     public void addProducts(Product product) {

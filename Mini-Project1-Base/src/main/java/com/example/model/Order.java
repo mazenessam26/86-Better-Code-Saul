@@ -17,11 +17,11 @@ public class Order {
     public Order() {
 
     }
-    public Order(UUID id,UUID userId,double totalPrice,ArrayList<Product> products) {
+    public Order(UUID id,UUID userId,double totalPrice,List<Product> products) {
         this.id = id;
         this.userId = userId;
         this.totalPrice = totalPrice;
-        this.products = products;
+        this.products = new ArrayList<>(products);
     }
 
     public UUID getId() {
@@ -51,7 +51,7 @@ public class Order {
         return products;
     }
 
-    public void setProduct(ArrayList<Product> products) {
+    public void setProduct(List<Product> products) {
         this.products = products;
     }
     public void addProducts(Product product) {

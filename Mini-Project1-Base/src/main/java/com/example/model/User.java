@@ -42,7 +42,7 @@ public class User {
         return orders;
     }
 
-    public void setOrders(ArrayList<Order> orders) {
+    public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
     public void addOrders(Order order) {
