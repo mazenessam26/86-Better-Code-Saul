@@ -36,13 +36,14 @@ public class CartService extends MainService<Cart> {
         return cartRepository.getCartByUserId(userId);
     }
 
-    public void addProductToCart(UUID cartId, Product product) {
-        cartRepository.addProductToCart(cartId, product);
+    public void addProductToCart(UUID userId, Product product) {
+        cartRepository.addProductToCart(userId, product);
     }
 
-    public void deleteProductFromCart(UUID cartId, Product product) {
-        cartRepository.deleteProductFromCart(cartId, product.getId());
+    public String deleteProductFromCart(UUID cartId, UUID productId) {
+        return cartRepository.deleteProductFromCart(cartId, productId);
     }
+
 
     public void deleteCartById(UUID cartId) {
         cartRepository.deleteCartById(cartId);

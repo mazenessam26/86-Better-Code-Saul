@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.UUID;
 
 @Repository
@@ -17,7 +18,7 @@ public class CartRepository extends MainRepository<Cart> {
 
     @Override
     protected String getDataPath() {
-        return "data/carts.json";
+        return "src/main/java/com/example/data/carts.json";
     }
 
     @Override
@@ -50,27 +51,63 @@ public class CartRepository extends MainRepository<Cart> {
                 .orElse(null);
     }
 
-    public void addProductToCart(UUID cartId, Product product) {
+    public void addProductToCart(UUID userId, Product product) {
         List<Cart> carts = findAll();
+        Cart userCart = null;
+
+        // Find the user's cart
         for (Cart cart : carts) {
-            if (cart.getId().equals(cartId)) {
-                cart.getProducts().add(product);
-                saveAll((ArrayList<Cart>) carts);
-                return;
+            if (cart.getUserId() != null && cart.getUserId().equals(userId)) {
+                userCart = cart;
+                break;
             }
         }
+
+        // If no cart is found, create a new one
+        if (userCart == null) {
+            userCart = new Cart(UUID.randomUUID(),userId, new ArrayList<>());
+            carts.add(userCart);
+        }
+
+        // Add the product to the cart
+        if (userCart.getProducts() == null) {
+            userCart.setProducts(new ArrayList<>());
+        }
+        userCart.getProducts().add(product);
+
+        // Save the updated cart list
+        saveAll(new ArrayList<>(carts));
     }
 
-    public void deleteProductFromCart(UUID cartId, UUID productId) {
+
+    public String deleteProductFromCart(UUID cartId, UUID productId) {
         List<Cart> carts = findAll();
+
+        // Check if there are any carts available
+        if (carts.isEmpty()) {
+            return "Cart is empty";
+        }
+
         for (Cart cart : carts) {
             if (cart.getId().equals(cartId)) {
-                cart.getProducts().removeIf(p -> p.getId().equals(productId));
+                if (cart.getProducts().isEmpty()) {
+                    return "Cart is not empty.";
+                }
+
+                boolean removed = cart.getProducts().removeIf(p -> p.getId().equals(productId));
+                if (!removed) {
+                    return "Product with ID " + productId + " not found in the cart.";
+                }
+
                 saveAll((ArrayList<Cart>) carts);
-                return;
+                return "Product deleted from cart";
             }
         }
+
+        return "Product deleted from cart";
     }
+
+
 
     public void deleteCartById(UUID cartId) {
         List<Cart> carts = findAll();

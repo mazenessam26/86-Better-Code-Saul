@@ -7,6 +7,7 @@ import com.example.model.User;
 import com.example.service.CartService;
 import com.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -71,11 +72,11 @@ public class UserController {
     }
 
     @PutMapping("/deleteProductFromCart")
-    public String deleteProductFromCart(@RequestParam UUID userId, @RequestParam UUID productId) {
-
-        cartService.deleteProductFromCart(userId, new Product(productId));
-        return "Product deleted from cart";
+    public ResponseEntity<String> deleteProductFromCart(@RequestParam UUID userId, @RequestParam UUID productId) {
+        String message = cartService.deleteProductFromCart(userId, productId);
+        return ResponseEntity.ok(message);
     }
+
 
     @DeleteMapping("/delete/{userId}")
     public String deleteUserById(@PathVariable UUID userId) {

@@ -17,6 +17,9 @@ public class Order {
     public Order() {
 
     }
+    public Order(UUID id) {
+        this.id = id;
+    }
     public Order(UUID id,UUID userId,double totalPrice,List<Product> products) {
         this.id = id;
         this.userId = userId;

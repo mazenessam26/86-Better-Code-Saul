@@ -16,6 +16,9 @@ public class User {
     public User() {
 
     }
+    public User(UUID id) {
+        this.id = id;
+    }
     public User(UUID id,String name,ArrayList<Order> orders) {
         this.id = id;
         this.name = name;

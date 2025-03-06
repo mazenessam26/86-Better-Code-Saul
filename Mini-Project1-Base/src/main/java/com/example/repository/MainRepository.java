@@ -10,12 +10,13 @@ import org.springframework.stereotype.Repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
 @Primary
 @Repository
 public abstract class MainRepository<T> {
 
     protected ObjectMapper objectMapper = new ObjectMapper();
-    
+
     protected abstract String getDataPath();
     protected abstract Class<T[]> getArrayType();
 
@@ -56,7 +57,7 @@ public abstract class MainRepository<T> {
         saveAll(data);
     }
 
-    
+
 
 
 }
