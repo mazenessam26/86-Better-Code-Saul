@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.MiniProject1.ProductServiceTest" time="0.068" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.MiniProject1.OrderServiceTest" time="0.069" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -64,10 +64,16 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[MiniProject1] "/>
   </properties>
-  <testcase name="testApplyDiscount" classname="com.example.MiniProject1.ProductServiceTest" time="0.059"/>
-  <testcase name="testUpdateProduct" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
-  <testcase name="testGetProducts" classname="com.example.MiniProject1.ProductServiceTest" time="0.002"/>
-  <testcase name="testDeleteProductById" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
-  <testcase name="testAddProduct" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
-  <testcase name="testGetProductById" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
+  <testcase name="testGetOrders_EmptyList" classname="com.example.MiniProject1.OrderServiceTest" time="0.044"/>
+  <testcase name="testGetOrderById_InvalidId" classname="com.example.MiniProject1.OrderServiceTest" time="0.003"/>
+  <testcase name="testDeleteOrderById_NotFound" classname="com.example.MiniProject1.OrderServiceTest" time="0.003"/>
+  <testcase name="testAddOrder_EmptyOrder" classname="com.example.MiniProject1.OrderServiceTest" time="0.002"/>
+  <testcase name="testDeleteOrderById_InvalidId" classname="com.example.MiniProject1.OrderServiceTest" time="0.003"/>
+  <testcase name="testGetOrderById_NotFound" classname="com.example.MiniProject1.OrderServiceTest" time="0.002"/>
+  <testcase name="testAddOrder" classname="com.example.MiniProject1.OrderServiceTest" time="0.002"/>
+  <testcase name="testAddOrder_NullOrder" classname="com.example.MiniProject1.OrderServiceTest" time="0.002"/>
+  <testcase name="testDeleteOrderById" classname="com.example.MiniProject1.OrderServiceTest" time="0.002"/>
+  <testcase name="testGetOrderById" classname="com.example.MiniProject1.OrderServiceTest" time="0.001"/>
+  <testcase name="testGetOrders" classname="com.example.MiniProject1.OrderServiceTest" time="0.001"/>
+  <testcase name="testGetOrders_NullResponse" classname="com.example.MiniProject1.OrderServiceTest" time="0.001"/>
 </testsuite>

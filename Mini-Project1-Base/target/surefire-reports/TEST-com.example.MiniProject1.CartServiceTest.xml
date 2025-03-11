@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.MiniProject1.ProductServiceTest" time="0.068" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.MiniProject1.CartServiceTest" time="1.392" tests="21" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -12,7 +12,6 @@
     <property name="user.timezone" value="Africa/Cairo"/>
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="23"/>
-    <property name="APPLICATION_NAME" value="MiniProject1"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
@@ -31,8 +30,6 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
-    <property name="java.awt.headless" value="true"/>
     <property name="surefire.real.class.path" value="C:\Users\medoe\AppData\Local\Temp\surefire8428283082393735265\surefirebooter-20250311170002546_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -51,9 +48,7 @@
     <property name="user.dir" value="C:\Users\medoe\Desktop\hi\86-Better-Code-Saul\Mini-Project1-Base"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="26584"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Maven\apache-maven-3.9.9\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\medoe\AppData\Local\Microsoft\WindowsApps;C:\Users\medoe\.dotnet\tools;C:\Users\medoe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\medoe\AppData\Roaming\npm;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -62,12 +57,33 @@
     <property name="java.vm.version" value="23.0.2+7-58"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
-    <property name="LOGGED_APPLICATION_NAME" value="[MiniProject1] "/>
   </properties>
-  <testcase name="testApplyDiscount" classname="com.example.MiniProject1.ProductServiceTest" time="0.059"/>
-  <testcase name="testUpdateProduct" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
-  <testcase name="testGetProducts" classname="com.example.MiniProject1.ProductServiceTest" time="0.002"/>
-  <testcase name="testDeleteProductById" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
-  <testcase name="testAddProduct" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
-  <testcase name="testGetProductById" classname="com.example.MiniProject1.ProductServiceTest" time="0.001"/>
+  <testcase name="testDeleteProductFromCart_NotFound" classname="com.example.MiniProject1.CartServiceTest" time="1.284">
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\medoe\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testDeleteCartById_InvalidId" classname="com.example.MiniProject1.CartServiceTest" time="0.009"/>
+  <testcase name="testGetCarts" classname="com.example.MiniProject1.CartServiceTest" time="0.009"/>
+  <testcase name="testAddCart" classname="com.example.MiniProject1.CartServiceTest" time="0.007"/>
+  <testcase name="testGetCartByUserId_InvalidId" classname="com.example.MiniProject1.CartServiceTest" time="0.003"/>
+  <testcase name="testDeleteProductFromCart" classname="com.example.MiniProject1.CartServiceTest" time="0.004"/>
+  <testcase name="testGetCarts_NullResponse" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testAddProductToCart_NullProduct" classname="com.example.MiniProject1.CartServiceTest" time="0.003"/>
+  <testcase name="testGetCartById_InvalidId" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testGetCartByUserId_NotFound" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testDeleteCartById_NotFound" classname="com.example.MiniProject1.CartServiceTest" time="0.003"/>
+  <testcase name="testAddProductToCart" classname="com.example.MiniProject1.CartServiceTest" time="0.004"/>
+  <testcase name="testDeleteProductFromCart_InvalidCart" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testGetCartByUserId" classname="com.example.MiniProject1.CartServiceTest" time="0.004"/>
+  <testcase name="testGetCarts_EmptyList" classname="com.example.MiniProject1.CartServiceTest" time="0.003"/>
+  <testcase name="testDeleteCartById" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testAddProductToCart_InvalidUser" classname="com.example.MiniProject1.CartServiceTest" time="0.005"/>
+  <testcase name="testGetCartById" classname="com.example.MiniProject1.CartServiceTest" time="0.003"/>
+  <testcase name="testGetCartById_NotFound" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testAddCart_EmptyCart" classname="com.example.MiniProject1.CartServiceTest" time="0.002"/>
+  <testcase name="testAddCart_NullCart" classname="com.example.MiniProject1.CartServiceTest" time="0.003"/>
 </testsuite>
