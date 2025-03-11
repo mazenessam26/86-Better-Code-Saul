@@ -2,6 +2,7 @@ package com.example.repository;
 
 import com.example.model.Cart;
 import com.example.model.Product;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -13,12 +14,15 @@ import java.util.UUID;
 @SuppressWarnings("rawtypes")
 public class CartRepository extends MainRepository<Cart> {
 
+    @Value("${spring.application.cartDataPath}")
+    private String filepath;
+
     public CartRepository() {
     }
 
     @Override
     protected String getDataPath() {
-        return "src/main/java/com/example/data/carts.json";
+        return filepath;
     }
 
     @Override

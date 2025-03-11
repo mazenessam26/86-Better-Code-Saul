@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e454514c-c05c-401c-9678-40de3c759bdf" name="Changes" comment="" />
+    <list default="true" id="e454514c-c05c-401c-9678-40de3c759bdf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/MainRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/MainRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/classes/com/example/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/2025-03-11T21-44-26_584.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.CartServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.CartServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.MiniProject1ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.MiniProject1ApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.OrderServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.OrderServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.ProductServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.ProductServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.userTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/TEST-com.example.MiniProject1.userTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.CartServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.CartServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.MiniProject1ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.MiniProject1ApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.OrderServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.OrderServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.ProductServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.ProductServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.userTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mini-Project1-Base/target/surefire-reports/com.example.MiniProject1.userTests.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.CartServiceTest.executor": "Run",
+    "JUnit.MiniProject1ApplicationTests.executor": "Run",
     "JUnit.OrderServiceTest.executor": "Run",
     "JUnit.ProductServiceTest.executor": "Run",
     "JUnit.ProductServiceTest.testAddProduct.executor": "Run",
@@ -38,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.MiniProject1Application.executor": "Run",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/medoe/Desktop/hi/86-Better-Code-Saul",
     "node.js.detected.package.eslint": "true",
@@ -50,7 +75,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest">
+  <component name="RunManager" selected="JUnit.MiniProject1ApplicationTests">
     <configuration name="CartServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniProject1" />
       <extension name="coverage">
@@ -61,6 +86,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.MiniProject1" />
       <option name="MAIN_CLASS_NAME" value="com.example.MiniProject1.CartServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniProject1ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.MiniProject1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.MiniProject1" />
+      <option name="MAIN_CLASS_NAME" value="com.example.MiniProject1.MiniProject1ApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,22 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MiniProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.MiniProject1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.MiniProject1" />
-      <option name="MAIN_CLASS_NAME" value="com.example.MiniProject1.ProductServiceTest" />
-      <option name="METHOD_NAME" value="testAddProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="userTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniProject1" />
       <extension name="coverage">
@@ -137,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MiniProject1ApplicationTests" />
         <item itemvalue="JUnit.ProductServiceTest" />
-        <item itemvalue="JUnit.userTests" />
-        <item itemvalue="JUnit.OrderServiceTest" />
         <item itemvalue="JUnit.CartServiceTest" />
-        <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
+        <item itemvalue="JUnit.OrderServiceTest" />
+        <item itemvalue="JUnit.userTests" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +186,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741702747376</updated>
       <workItem from="1741702749216" duration="1538000" />
+      <workItem from="1741729302251" duration="2000000" />
     </task>
     <servers />
   </component>

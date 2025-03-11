@@ -3,18 +3,23 @@ package com.example.repository;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 import com.example.model.Product;
 
 @Repository
 @SuppressWarnings("rawtypes")
 public class ProductRepository extends MainRepository<Product> {
+
+    @Value("${spring.application.productDataPath}")
+    private String filepath;
+
     public ProductRepository() {
     }
 
     @Override
     protected String getDataPath() {
-        return "src/main/java/com/example/data/products.json";
+        return filepath;
     }
 
     @Override
