@@ -1,5 +1,20 @@
+# Use OpenJDK 25 Early Access on Oracle Linux 9
 FROM openjdk:25-ea-4-jdk-oraclelinux9
+
+# Set the working directory inside the container
 WORKDIR /app
-COPY ./ /app
+
+# Copy the built JAR file into the container
+COPY target/*.jar app.jar
+
+# Copy the data folder from src/main/java/com/example/ into the container
+COPY src/main/java/com/example/data /app/data
+
+# Set environment variable for JSON file location
+ENV DATA_PATH=/app/data/
+
+# Expose the port
 EXPOSE 8080
-CMD ["java","-jar","/app/target/mini1.jar"]
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]

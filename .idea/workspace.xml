@@ -20,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2uAsWmHsOnjRoORNSzz7eQFi6YV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,8 +30,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CartServiceTest.executor": "Run",
+    "JUnit.OrderServiceTest.executor": "Run",
     "JUnit.ProductServiceTest.executor": "Run",
     "JUnit.ProductServiceTest.testAddProduct.executor": "Run",
+    "JUnit.userTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.MiniProject1Application.executor": "Run",
@@ -48,6 +51,36 @@
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.ProductServiceTest">
+    <configuration name="CartServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.MiniProject1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.MiniProject1" />
+      <option name="MAIN_CLASS_NAME" value="com.example.MiniProject1.CartServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.MiniProject1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.MiniProject1" />
+      <option name="MAIN_CLASS_NAME" value="com.example.MiniProject1.OrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniProject1" />
       <extension name="coverage">
@@ -79,6 +112,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="userTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.MiniProject1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.MiniProject1" />
+      <option name="MAIN_CLASS_NAME" value="com.example.MiniProject1.userTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MiniProject1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="MiniProject1" />
@@ -90,6 +138,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductServiceTest" />
+        <item itemvalue="JUnit.userTests" />
+        <item itemvalue="JUnit.OrderServiceTest" />
+        <item itemvalue="JUnit.CartServiceTest" />
         <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
       </list>
     </recent_temporary>
